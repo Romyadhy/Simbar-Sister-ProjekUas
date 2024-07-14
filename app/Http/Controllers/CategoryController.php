@@ -105,16 +105,16 @@ class CategoryController extends Controller
      */
     public function destroy(string $id)
     {
-        $location = PlantCategory::findOrFail($id);
+        $category = PlantCategory::findOrFail($id);
 
-        if (!$location) {
+        if (!$category) {
             return response()->json([
                 'status' => 'error',
                 'message' => 'Category not found'
             ], 404);
         }
 
-        $location->delete();
+        $category->delete();
 
         return response()->json([
             'status' => 'success',

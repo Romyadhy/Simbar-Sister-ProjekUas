@@ -1,0 +1,1 @@
+<div id="copyright text-right" class="m-4 font-bold">© Copyright 2024 ROMMY & DEFRYY </div>
